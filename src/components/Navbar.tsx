@@ -5,10 +5,11 @@ import { RxHamburgerMenu } from 'react-icons/rx';
 import { Link as ScrollLink } from 'react-scroll';
 import { useColorModeValue } from './ui/color-mode';
 import { MenuContent, MenuItem, MenuRoot, MenuTrigger, } from "./ui/menu";
+import { ColorModeButton } from './ui/color-mode';
 
 export const Navbar = () => {
     const isMobile = useBreakpointValue({ base: true, xs: true, sm: true, md: false, lg: false });
-    const bg = useColorModeValue("blue.50", "gray.900")
+    const bg = useColorModeValue("white", "black")
     const [isVisible, setIsVisible] = useState(true);
     const timeoutRef = useRef<number | null>(null);
 
@@ -50,6 +51,7 @@ export const Navbar = () => {
             zIndex={1000}
             transition="opacity 0.5s"
             opacity={isVisible ? 1 : 0}
+            bg={bg}
         
         >
             {isMobile ? (
@@ -75,11 +77,12 @@ export const Navbar = () => {
                 </Flex>
 
             ) : (
-                <Flex ml={"auto"} gap={4} direction={"row"}>
+                <Flex alignItems={"center"} ml={"auto"} gap={4} direction={"row"}>
                     <ScrollLink style={{ cursor: "pointer" }} smooth={true} duration={500} to='about-me'> About Me</ScrollLink>
                     <ScrollLink style={{ cursor: "pointer" }} smooth={true} duration={500} to='exp'> Experience</ScrollLink>
                     <ScrollLink style={{ cursor: "pointer" }} smooth={true} duration={500} to='blog'> Blog</ScrollLink>
                     <ScrollLink style={{ cursor: "pointer" }} smooth={true} duration={500} to='projects'> Projects</ScrollLink>
+                    <ColorModeButton/>
                 </Flex>
             )}
           

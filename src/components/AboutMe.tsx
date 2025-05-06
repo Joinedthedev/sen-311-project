@@ -4,7 +4,7 @@ import React from 'react'
 
 const AboutMe = () => {
     return (
-        <HStack justify={"space-between"} px={"200px"} mx={"auto"}>
+        <HStack justify={"space-between"}  mx={"auto"}>
             <VStack width={"70%"} >
                 <Heading fontSize={"4xl"} mr={"auto"}>
                     About me
@@ -18,7 +18,7 @@ const AboutMe = () => {
                     </Text>
                     <Box mr={"auto"} >
                         <Text > Here are some of the technologies I&apos;ve worked with: </Text>
-                        <HStack justify={"space-between"}>
+                        <HStack p={5} justify={"space-between"}>
                             <VStack>
                                 <Box as = "ul" listStyleType={"disc"}>
                                     <Box as ="li"  _marker={{color: "blue"}}>React</Box>

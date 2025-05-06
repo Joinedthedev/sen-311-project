@@ -14,7 +14,7 @@ const Hero = () => {
 
     return (
         <VStack gap={6} justifyContent={"center"} align={"center"} mt={"200px"} mx={"auto"} >
-            <Heading fontSize={"3xl"}> I'M A </Heading>
+            <Heading fontSize={"3xl"}> I&apos;M A </Heading>
             <Heading className={pixel.className} fontSize={"5xl"}>FRONTEND   DEVELOPER</Heading>
             <HStack>
                 <Flex spaceX={4} align={"center"} ml={"auto"} gap={2}>

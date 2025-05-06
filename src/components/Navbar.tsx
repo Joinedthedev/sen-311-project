@@ -1,10 +1,9 @@
 "use client"
-import { Flex, Icon, IconButton, Link, useBreakpointValue } from '@chakra-ui/react';
+import { Flex, IconButton, useBreakpointValue } from '@chakra-ui/react';
 import { useEffect, useRef, useState } from 'react';
-import { GrGithub, GrLinkedinOption, GrMail, GrYoutube } from "react-icons/gr";
 import { RxHamburgerMenu } from 'react-icons/rx';
 import { Link as ScrollLink } from 'react-scroll';
-import { ColorModeButton, useColorModeValue } from './ui/color-mode';
+import { useColorModeValue } from './ui/color-mode';
 import { MenuContent, MenuItem, MenuRoot, MenuTrigger, } from "./ui/menu";
 
 export const Navbar = () => {

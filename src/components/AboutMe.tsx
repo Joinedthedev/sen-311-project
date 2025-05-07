@@ -9,7 +9,7 @@ const AboutMe = () => {
                 <Heading fontSize={"4xl"} mr={"auto"}>
                     About me
                 </Heading>
-                <VStack gap={5} fontSize={"2xl"}>
+                <VStack gap={5} fontSize={"xl"}>
                     <Text>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
